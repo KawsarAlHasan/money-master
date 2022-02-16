@@ -12,7 +12,7 @@
 
     <!-- stirt section -->
     <section class="container">
-        <h1 class="text-center m-4">Taka Master</h1>
+        <h1 class="text-center m-4 text-success">Taka Master</h1>
         <div class="overflow-hidden">
             <div class="row gy-5 mb-5">
 
@@ -36,20 +36,22 @@
                     <h4 class="mt-5 mb-3">Expenses</h4>
                     <div class="input-group m-3 row">
                         <span class="col-2 ms-5">Food : </span>
-                        <input class="col-10 form-control me-5 px-4" type="text" placeholder="Enter your food costs" aria-label="input">
+                        <input id="food-input" class="col-10 form-control me-5 px-4" type="text" placeholder="Enter your food costs" aria-label="input">
                     </div>
 
                     <div class="input-group m-3 row">
                         <span class="col-2 ms-5">Rent : </span>
-                        <input class="col-10 form-control me-5 px-4" type="text" placeholder="Enter your Rent costs " aria-label="input">
+                        <input id="rent-input" class="col-10 form-control me-5 px-4" type="text" placeholder="Enter your Rent costs " aria-label="input">
                     </div>
 
                     <div class="input-group m-3 row">
                         <span class="col-2 ms-5">Clothes:</span>
-                        <input class="col-10 form-control me-5 px-4" type="text" placeholder="Enter your Clothes costs " aria-label="input">
+                        <input id="clothes-input" class="col-10 form-control me-5 px-4" type="text" placeholder="Enter your Clothes costs " aria-label="input">
                     </div>
-                    <button class="btn btn-primary px-5">Calculate</button>
-                    <h4 class="m-4">Total Expenses: <span>00</span></h4>
+
+                    <!-- Calculate button -->
+                    <button id="calculate-button" class="btn btn-primary px-5">Calculate</button>
+                    <h4 class="m-4">Total Expenses: <span id="total-expenses">00</span></h4>
                     <h4 class="m-4">Balance: <span>00</span></h4>
                     
                     <!-- Save -->
