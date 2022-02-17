@@ -28,14 +28,7 @@ document.getElementById('calculate-button').addEventListener('click', function()
     // updete balance
     let totalBalance = document.getElementById('total-balance');
     totalBalance.innerText = parseFloat(incomeAmount - totalExpensesAmount);
-
-    // clear input fields
-    foodInput.value = "";
-    rentInput.value = "";
-    clothesInput.value = "";
 })
-
-
 
 // handle save button event
 document.getElementById('save-button').addEventListener('click', function(){
