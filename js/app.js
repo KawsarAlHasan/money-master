@@ -27,11 +27,31 @@ document.getElementById('calculate-button').addEventListener('click', function()
 
     // // updete balance
     const totalBalance = document.getElementById('total-balance');
-    totalBalance.innerText =parseFloat(incomeAmount - totalExpensesAmount);
+    totalBalance.innerText = parseFloat(incomeAmount - totalExpensesAmount);
 
     // clear input fields
-    incomeInput.value = "";
     foodInput.value = "";
     rentInput.value = "";
     clothesInput.value = "";
+})
+
+
+
+// handle save button event
+document.getElementById('save-button').addEventListener('click', function(){
+    // income Input
+    const incomeInput = document.getElementById('income-input');
+    const incomeAmountText = incomeInput.value;
+    const incomeAmount = parseFloat(incomeAmountText);
+
+    // Save Input
+    const saveInput = document.getElementById('save-input');
+    const saveAmountText = saveInput.value;
+    const saveAmount = parseFloat(saveAmountText);
+
+    // saving amount
+    const savingAmount = document.getElementById('saving-amount');
+    const savingAmountText = (incomeAmount / 100) * saveAmount;
+    savingAmount.innerText = parseFloat(savingAmountText);
+
 })

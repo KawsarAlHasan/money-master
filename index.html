@@ -18,7 +18,7 @@
 
                 <!-- This is image -->
               <div class="col-md-6">
-                <img src="img/taka-master.jpg" class="img-fluid" alt="">
+                <img src="image/taka-master.jpg" class="img-fluid" alt="">
               </div>
 
               <!-- Income, Expenses and Save -->
@@ -27,6 +27,7 @@
 
                     <!-- Income -->
                     <h4 class="mt-5 mb-3">Income</h4>
+                    <div class="text-danger"></div>
                     <div class="input-group m-3 row">
                         <span class="col-2 ms-5">Income:</span>
                         <input id="income-input" class="col-10 form-control me-5 px-4" type="text" placeholder="Enter your salary " aria-label="input">
@@ -54,14 +55,14 @@
                     <h4 class="m-4">Total Expenses: <span id="total-expenses">00</span></h4>
                     <h4 class="m-4">Balance: <span id="total-balance">00</span></h4>
                     
-                    <!-- Save -->
+                    <!-- Save option -->
                     <span class="d-inline">Save:</span>
-                    <input class="form-control w-25 d-inline" type="text" aria-label="input">
+                    <input id="save-input" class="form-control w-25 d-inline" type="text" aria-label="input">
                         
                     <span>% </span>
-                    <button class="btn btn-primary px-4">Save</button>
+                    <button id="save-button" class="btn btn-primary px-4">Save</button>
 
-                    <h4 class="m-4">Saving Amount: <span>00</span></h4>
+                    <h4 class="m-4">Saving Amount: <span id="saving-amount">00</span></h4>
                     <h4 class="m-4">Remaining Balance: <span>00</span></h4>
                 </div>
               </div>
